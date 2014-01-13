@@ -1,4 +1,4 @@
-%_javapackages_macros
+%{?_javapackages_macros:%_javapackages_macros}
 Name:          maven-processor-plugin
 Version:       2.1.1
 Release:       4.0%{?dist}
@@ -63,3 +63,37 @@ cp -p src/main/resources/COPYING.LESSER .
 
 %files javadoc -f .mfiles-javadoc
 %doc COPYING.LESSER
+
+%changelog
+* Sat Aug 03 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.1.1-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_20_Mass_Rebuild
+
+* Mon Jul 08 2013 gil cattaneo <puntogil@libero.it> 2.1.1-3
+- switch to XMvn
+- minor changes to adapt to current guideline
+
+* Tue Mar 26 2013 gil cattaneo <puntogil@libero.it> 2.1.1-2
+- fix B/R list
+
+* Tue Mar 26 2013 Mat Booth <fedora@matbooth.co.uk> - 2.1.1-1
+- Upgrade to 2.1.1, fixes rhbz #927887
+
+* Thu Feb 14 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.0.7-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
+
+* Wed Feb 06 2013 Java SIG <java-devel@lists.fedoraproject.org> - 2.0.7-2
+- Update for https://fedoraproject.org/wiki/Fedora_19_Maven_Rebuild
+- Replace maven BuildRequires with maven-local
+
+* Sat Oct 06 2012 gil cattaneo <puntogil@libero.it> 2.0.7-1
+- update to 2.0.7
+
+* Thu Jul 19 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.0.5-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_18_Mass_Rebuild
+
+* Thu Jun 21 2012 gil cattaneo <puntogil@libero.it> 2.0.5-2
+- fix summary
+- fix license
+
+* Sun Apr 22 2012 gil cattaneo <puntogil@libero.it> 2.0.5-1
+- initial rpm
