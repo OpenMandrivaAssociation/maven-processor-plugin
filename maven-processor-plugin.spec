@@ -7,7 +7,7 @@ Summary:       Maven Processor Plugin
 # and the site here it is hosted says "GNU Lesser GPL"
 # contacted the project owner (available in POM) and clarified the license status in LGPLv3
 License:       LGPLv3 and ASL 2.0
-Url:           http://code.google.com/p/maven-annotation-plugin/
+Url:           https://code.google.com/p/maven-annotation-plugin/
 # git clone https://code.google.com/p/maven-annotation-plugin/ maven-processor-plugin-2.1.1
 # (cd maven-processor-plugin-2.1.1/ && git archive --format=tar --prefix=maven-processor-plugin-2.1.1/ maven-processor-plugin-2.1.1 | xz > ../maven-processor-plugin-2.1.1-src-git.tar.xz)
 Source0:       %{name}-%{version}-src-git.tar.xz
